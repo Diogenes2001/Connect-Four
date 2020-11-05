@@ -674,10 +674,10 @@ public class C4Game extends JPanel implements Runnable, ListOperation {
 		while (true) {
 			// Deactivate most menu-items (except File and Help) for the
 			// different states
-			c4Menu.setEnabledMenus(new int[] { 1, 2, 3 }, false);
+			c4Menu.setEnabledMenus(new int[] { 1 }, false);
 			switch (state) {
 			case IDLE:
-				c4Menu.setEnabledMenus(new int[] { 1, 2, 3 }, true);
+				c4Menu.setEnabledMenus(new int[] { 1 }, true);
 				action = Action.NOACTION;
 				break;
 			case PLAY:
